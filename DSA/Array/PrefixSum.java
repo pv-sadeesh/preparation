@@ -17,7 +17,7 @@ public class PrefixSum {
     }
 
     public static void main(String[] args) {
-        int[] input = new int[] {2, 5, 1, 4, 7, 3, 9, 8};
+        int[] input = Common.getSampleInputArray();
 
         System.out.println("Before:");
         System.out.println(Arrays.toString(input));

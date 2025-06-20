@@ -6,7 +6,11 @@ public class Reverse {
     public static void execute(int[] input) {
         int left = 0;
         int right = input.length - 1;
+        
+        Reverse.execute(input, left, right);
+    }
 
+    public static void execute(int[] input, int left, int right) {
         while(left < right) {
             int temp = input[left];
             input[left] = input[right];

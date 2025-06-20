@@ -22,7 +22,7 @@ public class Common {
     }
 
     public static int[] getSampleInputArray() {
-        return new int[] {1,2,3};
+        return new int[] {1, 2, 3, 4, 5, 6, 7, 8};
     }
 
     public static void printMatrix(int[][] matrix) {
