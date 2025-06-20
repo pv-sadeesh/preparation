@@ -2,9 +2,12 @@ package DSA.Array;
 
 public class RotateAnticlockwise {
     public static void execute(int[][] matrix) {
+        // STEP-1: Reverse each row in a matrix
         for(int[] row :  matrix) {
             Reverse.execute(row);
         }
+
+        // STEP-2: Transpose the matrix
         Transpose.execute(matrix);
     }
 
