@@ -76,7 +76,7 @@ public class SinglyLinkedList {
     public void print() {
         Node current = head;
         while(current != null) {
-            System.out.println(current.getData() + " -> ");
+            System.out.print(current.getData() + " -> ");
             current = current.getNext();
         }
         System.out.println("null");
@@ -116,5 +116,24 @@ public class SinglyLinkedList {
         public void setNext(Node next) {
             this.next = next;
         }
+    }
+
+    public static void main(String[] args) {
+        SinglyLinkedList list = new SinglyLinkedList();
+        for(int i = 0; i < 10; i++) {
+            list.insertLast(i);
+        }
+
+        System.out.print("Before Reversal: ");
+        list.print();
+
+        System.out.println("Length Before Removal: " + list.length());
+        list.remove(9);
+        System.out.println("Length After Removal: " + list.length());
+
+        list.reverse();
+        
+        System.out.print("After Reversal: ");
+        list.print();
     }
 }
