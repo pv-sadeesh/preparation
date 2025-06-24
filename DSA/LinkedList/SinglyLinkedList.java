@@ -92,6 +92,10 @@ public class SinglyLinkedList {
         return count;
     }
 
+    public boolean isEmpty() {
+        return head == null;
+    }
+
     public Node getHead() {
         return head;
     }
