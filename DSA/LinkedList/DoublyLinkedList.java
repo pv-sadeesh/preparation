@@ -175,4 +175,27 @@ public class DoublyLinkedList {
             this.next = next;
         }
     }
+
+    public static void main(String[] args) {
+        DoublyLinkedList list = new DoublyLinkedList();
+        for(int i = 0; i < 10; i++) {
+            list.insertLast(i);
+        }
+
+        System.out.print("Before Reversal (Print Forward): ");
+        list.printForward();
+        System.out.print("Before Reversal (Print Backword): ");
+        list.printBackward();
+
+        System.out.println("Length Before Removal: " + list.length());
+        list.remove(5);
+        System.out.println("Length After Removal: " + list.length());
+
+        list.reverse();
+        
+        System.out.print("After Reversal (Print Forward): ");
+        list.printForward();
+        System.out.print("After Reversal (Print Backword): ");
+        list.printBackward();
+    }
 }
