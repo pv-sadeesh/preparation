@@ -4,6 +4,10 @@ import DSA.LinkedList.SinglyLinkedList.Node;
 
 public class FindMiddle {
     public static Node execute(SinglyLinkedList list) {
+        if(list == null || list.getHead() == null) {
+            return null;
+        }
+
         Node slow = list.getHead();
         Node fast = list.getHead();
 
