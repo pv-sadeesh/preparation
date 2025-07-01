@@ -99,6 +99,10 @@ public class SinglyLinkedList {
     public Node getHead() {
         return head;
     }
+
+    public void setHead(Node head) {
+        this.head = head;
+    }
     
     public static class Node {
         private final int data;
