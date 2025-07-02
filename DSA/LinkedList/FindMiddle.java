@@ -38,6 +38,7 @@ public class FindMiddle {
         list.remove(1);
         list.remove(2);
         list.remove(3);
+        list.remove(4);
 
         System.out.print("After Removal: ");
         list.print();
