@@ -27,6 +27,24 @@ public class SinglyLinkedList {
         head = node;
     }
 
+    public void insertLast(Node node) {
+        if(head == null) {
+            head = node;
+            return;
+        }
+
+        Node current = head;
+        while(current.getNext() != null) {
+            current = current.getNext();
+        }
+        current.setNext(node);   
+    }
+
+    public void insertFirst(Node node) {
+        node.setNext(head);
+        head = node;
+    }
+
     public void remove(int data) {
         if(head == null) {
             return;
@@ -105,7 +123,7 @@ public class SinglyLinkedList {
     }
     
     public static class Node {
-        private final int data;
+        private int data;
         private Node next;
 
         public Node(int data) {
@@ -115,6 +133,10 @@ public class SinglyLinkedList {
 
         public int getData() {
             return data;
+        }
+
+        public void setData(int data) {
+            this.data = data;
         }
 
         public Node getNext() {
